@@ -35,7 +35,6 @@ body {
     max-width: 320px;
     padding-right: 16px;
     padding-left: 16px;
-    margin: 0 auto;
   }
   .header-container {
     align-items: center;
@@ -46,7 +45,6 @@ body {
   }
   
   .header {
-    max-width: 320px;
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -239,8 +237,6 @@ body {
   
   .first {
     background-color: #2e2f42;
-    max-width: 320px;
-    height: 432px;
     flex-shrink: 0;
     padding: 72px 0;
     align-items: center;
@@ -963,104 +959,143 @@ margin-bottom: 16px;
   }*/
   @media screen and (min-width: 768px) {
     .container {
-      max-width: 768px;
-      margin: 0 auto;
-      padding-right: 16px;
-      padding-left: 16px;
+      width: 768px;
+      
+    }
+    .header-container {
+      align-items: center;
+      display: flex;
+      height: 72px;
+      justify-content: space-between;
+      padding: 0 15px 0 15px;
+    }
+    
+    .header {
+      background-color: #fff;
+      border-bottom: 1px solid #e7e9fc;
+      box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+    .header-navigation {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
+    
+    .header-navigation-logo-web {
+      flex-shrink: 0;
+      color: #4d5ae5;
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-left: 16px;
+      position: relative;
+      color: #404bbf;
+    }
+    .header-navigation-logo-web:active,
+    .header-navigation-logo-web:hover,
+    .header-navigation-logo-web:focus {
+      color: #404bbf;
+    }
+    .header-navigation-logo-studio {
+      color: #2e2f42;
     }
     .header-navigation-content {
-        align-items: center;
-        display: flex;
-        gap: 40px;
-      }
-      .header-navigation-link {
-        display: flex;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .curent {
-        position: relative;
-        color: #404bbf;
-      }
-      .curent::after {
-        background-color: #404bbf;
-        width: 48px;
-        height: 4px;
-        border-radius: 2px;
-        content: "";
-        position: absolute;
-        display: block;
-        left: 0;
-        bottom: -1px;
-      }
+      align-items: center;
+      display: flex;
+      gap: 40px;
+    }
+    .header-navigation-link {
+      display: flex;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .unlock-menu{
+    display: none;
+    }
+    .curent {
+      position: relative;
+      color: #404bbf;
+    }
+    .curent::after {
+      background-color: #404bbf;
+      width: 48px;
+      height: 4px;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: -1px;
+    }
     
-      .header-navigation-link a {
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
+    .header-navigation-link a {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     
-      .header-navigation-link a::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        height: 4px;
-        width: 100%;
-        background-color: #404bbf;
-        border-radius: 2px;
-        transform-origin: right;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
+    .header-navigation-link a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 4px;
+      width: 100%;
+      background-color: #404bbf;
+      border-radius: 2px;
+      transform-origin: right;
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     
-      .header-navigation-link a:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
-      }
-      .header-navigation-btns {
-        color: #2e2f42;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        padding: 24px 0 24px;
-      }
+    .header-navigation-link a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    .header-navigation-btns {
+      color: #2e2f42;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      padding: 24px 0 24px;
+    }
     
-      .header-navigation-btns:hover,
-      .header-navigation-btns:focus {
-        color: #404bbf;
-      }
+    .header-navigation-btns:hover,
+    .header-navigation-btns:focus {
+      color: #404bbf;
+    }
     
-      .header-contacts {
-        font-style: normal;
-      }
-      .header-contacts-content a {
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
+    .header-contacts {
+      font-style: normal;
+    }
+    .header-contacts-content a {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     
-      .header-contacts-content a:hover {
-        color: #404bbf;
-      }
-      .header-contacts-list {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-      }
-      .header-contacts-content {
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .header-contacts-communication {
-        color: #434455;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-      }
+    .header-contacts-content a:hover {
+      color: #404bbf;
+    }
+    .header-contacts-list {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .header-contacts-content {
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .header-contacts-communication {
+      color: #434455;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+    }
     
-      .header-contacts-communication:hover,
-      .header-contacts-adr:focus {
-        color: #404bbf;
-      }
-      .unlock-menu{
-        display: none;
-      }
+    .header-contacts-communication:hover,
+    .header-contacts-adr:focus {
+      color: #404bbf;
+    }
     .first {
       background-color: #2e2f42;
       width: 768px;
@@ -1079,6 +1114,12 @@ margin-bottom: 16px;
       background-position: center;
       background-size: cover;
     }
+    /*@media (min-resolution: 192dpi) {
+      img {
+        background-image: url(../images/Danieltablet.jpg);
+        max-width: 100%;
+        height: auto;
+      }}*/
     .first-title {
       color: #fff;
       text-align: center;
